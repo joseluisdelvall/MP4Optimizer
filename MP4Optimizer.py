@@ -4,6 +4,14 @@ from moviepy.editor import VideoFileClip
 import os
 from pathlib import Path
 
+#############################################################
+# QUALITY You can change this. Default: 1  Range: 0 - 1     #
+#############################################################
+quality = 1
+#############################################################
+
+
+
 def optimizar_video(input_path, output_path, quality):
     # Cargar el video
     video = VideoFileClip(input_path)
@@ -36,8 +44,6 @@ if input_path:
     # Ruta del video de salida optimizado (en el escritorio del usuario)
     output_path = os.path.join(desktop_path, 'video_optimizado.mp4')
     
-    # Calidad del video optimizado (valor entre 0 y 1)
-    quality = 1  # Cambia este valor para ajustar la calidad
     
     # Optimizar el video
     optimizar_video(input_path, output_path, quality)
