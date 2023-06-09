@@ -6,4 +6,6 @@ Python code to optimize MP4 videos
 
 ## Requeriments
 
-```pip install moviepy```
+```
+pip install moviepy
+```
