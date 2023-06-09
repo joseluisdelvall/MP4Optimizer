@@ -3,6 +3,7 @@ Python code to optimize MP4 videos
 
 ## How it works
 
+With the `moviepy` module, it is optimized by reducing the file size without losing much quality. It is recommended for short videos. You can change the quality of the optimization within the code.
 
 ## Requeriments
 
