@@ -23,8 +23,7 @@ root = tk.Tk()
 root.withdraw()
 
 # Solicitar al usuario la ubicación del archivo de entrada
-input_path = filedialog.askopenfilename(title="Seleccionar archivo de video",
-                                        filetypes=[("Videos", "*.mp4")])
+input_path = filedialog.askopenfilename(title="Seleccionar archivo de video", filetypes=[("Videos", "*.mp4")])
 
 # Verificar si se seleccionó un archivo
 if input_path:
@@ -35,7 +34,7 @@ if input_path:
     desktop_path = Path.home() / "Downloads"
     
     # Ruta del video de salida optimizado (en el escritorio del usuario)
-    output_path = os.path.join(desktop_path, 'video_optimizado.mp4').replace("/", "\\")
+    output_path = os.path.join(desktop_path, 'video_optimizado.mp4')
     
     # Calidad del video optimizado (valor entre 0 y 1)
     quality = 1  # Cambia este valor para ajustar la calidad
